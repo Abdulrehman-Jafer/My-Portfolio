@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar"
 import { Toaster } from "./Components/Globles/ToastContainer"
 const App = () => {
   return (
-    <div className="mx-auto mediaWidth">
+    <main className="px-[1rem]">
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -15,7 +15,7 @@ const App = () => {
       <Route path='/about' element={<About/>}/>
     </Routes>
     <Toaster/>
-    </div>
+    </main>
   )
 }
 

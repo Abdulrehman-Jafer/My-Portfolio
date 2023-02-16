@@ -41,13 +41,6 @@ input{
   border: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .mediaWidth {
-    max-width: 100%;
-    width: 100% !important;
-    padding: 1rem 1rem;
-  }
-}
 @media only screen and (max-width: 700px) {
   .flexWrap {
     flex-wrap: wrap;
