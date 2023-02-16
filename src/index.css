@@ -40,6 +40,14 @@ a {
 input{
   border: none;
 }
+.borderGray{
+  border: gray 4px solid;
+  border-radius:6px ;
+}
+.borderBlue{
+  border: rgb(23, 111, 226) 3px solid;
+  border-radius:6px ;
+}
 
 @media only screen and (max-width: 700px) {
   .flexWrap {
@@ -58,9 +66,7 @@ input{
     opacity: 1;
   }
 }
-/* .translateXAnimation{
- 
-} */
+
 @keyframes translateXani {
   0%{
     transform: translateY(-30rem);
@@ -69,27 +75,16 @@ input{
     transform: translateY(0rem);
   }
 }
-/* .translateXAnimation2{
-  transform: translateXani2 1s linear;
-} */
+
 @keyframes translateXani2 {
   0%{
     transform: translateX(30rem);
-    /* opacity: 0; */
   }
   100%{
     transform: translateX(0rem);
-    /* opacity: 1; */
   }
 }
-.borderGray{
-  border: gray 4px solid;
-  border-radius:6px ;
-}
-.borderBlue{
-  border: rgb(23, 111, 226) 3px solid;
-  border-radius:6px ;
-}
+
 .transformY100rem{
   animation: transformY100rem 500ms linear;
 }

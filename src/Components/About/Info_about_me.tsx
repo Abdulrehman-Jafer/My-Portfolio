@@ -2,7 +2,7 @@ import myPic from "../../assets/myPic.jpg"
 const Info_about_me = () => {
 
     return (
-        <main className='flex gap-[3rem] items-center flex-wrap justify-center fontStyle transformY100remfromBottom'>
+        <main className='flex gap-[3rem] flex-wrap items-center justify-center transformY100remfromBottom'>
             <section className='flex flex-col gap-[2rem]'>
                 <div className='flex flex-col gap-[0.3rem]'>
                     <p className={`opacity-[0.3]`}>Hey there!</p>
@@ -23,7 +23,7 @@ const Info_about_me = () => {
                     </p>
                 </div>
             </section>
-            <section className='bg-third rounded-md sm:p-[2rem] p-4 '>
+            <section className='bg-third rounded-md sm:p-[2rem] p-4 min-w-[300px]'>
                 <img src={myPic} alt="myPic" className='object-cover w-[100%] h-[500px]' />
             </section>
         </main>
