@@ -5,12 +5,12 @@ import { RefObject } from "react"
 const Home_top = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => {
     return (
         <main className="flex items-center gap-[2rem] flex-wrap transformY100rem">
-            <section className="flex-1 flex flex-col gap-[3rem] min-w-[350px] " >
+            <section className="flex-1 flex flex-col gap-[3rem] min-w-[310px] " >
                 <div>
                     <h5 className="text-3xl text-primary">Abdulrehman Jafer</h5>
                     <p className="text-2xl text-secondary font-thin">Web Developer</p>
                 </div>
-                <p className="min-w-[320px] text-secondary text-2xl [word-spacing:0.5rem] [font-weight:50] leading-10">
+                <p className="text-secondary text-2xl [word-spacing:0.5rem] [font-weight:50] leading-10">
                     Hey there! I'm a front-end web developer. I can build
                     attractive and user-friendly UI's with alot of functionality.
                     I am very passionate about my projects and do my best to make
