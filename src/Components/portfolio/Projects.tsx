@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectInfo from './ProjectInfo'
-import bankApp from "../../assets/bankApp.png"
-import mern from "../../assets/mern.png"
-import capstone from "../../assets/capstone.png"
-import portfolio from "../../assets/portfolio.png"
+import bankApp from "../../assets/bankApp.jpg"
+import mern from "../../assets/mern.jpg"
+import capstone from "../../assets/capstone.jpg"
+import portfolio from "../../assets/portfolio.jpg"
 
 
 const Projects = () => {
