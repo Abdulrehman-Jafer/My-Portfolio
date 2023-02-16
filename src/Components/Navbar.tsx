@@ -7,7 +7,7 @@ const Navbar = () => {
     const currentPath = useLocation()
     return (
         <main className="flex justify-between items-center my-[5rem] max-w-[1200px] mx-auto">
-            <section className="w-[80px] hover:scale-[1.001] border-slate-400 border rounded-[0.5rem] translateY transition-transform">
+            <section className="w-[80px] hover:scale-[1.001] border-slate-400 border rounded-[0.5rem] translateY transition-transform hidden sm:block">
                 <Link to={"/"}><img src={navLogo} alt="navLogo" className={"rounded-[0.5rem] w-[100%] min-w-[40px]"} /></Link>
             </section>
             <section className="flex gap-[2rem] font-semibold text-slate-300 text-[1.2rem]">
