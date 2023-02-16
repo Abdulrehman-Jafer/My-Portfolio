@@ -1,4 +1,4 @@
-import myPic from "../../assets/myPic.png"
+import myPic from "../../assets/myPic.jpg"
 const Info_about_me = () => {
 
     return (
