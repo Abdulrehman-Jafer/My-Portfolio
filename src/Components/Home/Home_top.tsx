@@ -36,7 +36,7 @@ const Home_top = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => {
                     </a>
                 </div>
             </section>
-            <section className="flex-1 relative mediaWidth sm:min-w-[400px]">
+            <section className="flex-1 relative min-w-[300px] sm:min-w-[400px] mediaWidth">
                 <img src={bg} alt="bg" className="rounded-[1rem] w-[100%] object-cover min-h-[500px] " />
                 <div className="absolute top-[40%] left-[15%] fontStyle">
                     <p className="text-primary text-2xl mi-w-[300px]">"You are what you believe yourself to be" </p>
