@@ -10,7 +10,7 @@ const Navbar = () => {
             <section className="w-[80px] hover:scale-[1.001] border-slate-400 border rounded-[0.5rem] translateY transition-transform hidden sm:block">
                 <Link to={"/"}><img src={navLogo} alt="navLogo" className={"rounded-[0.5rem] w-[100%] min-w-[40px]"} /></Link>
             </section>
-            <section className="flex gap-[2rem] font-semibold text-slate-300 text-[1.2rem]">
+            <section className="flex gap-[2rem] font-semibold text-slate-300 text-[1.2rem] mediaFont mediaGap">
                 <Link className={`${currentPath.pathname === "/" ? "text-third underline decoration-4" : "text-primary scale-[1]"}
                  hover:scale-[1.02] hover:text-third`} to={"/"}>
                     Home

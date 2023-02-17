@@ -8,7 +8,7 @@ const ProjectInfo = ({ title, desc, img, site = "/", github = "/",duration=100, 
     
     return (
         <main className='flex flex-wrap' >
-            <section className='md:w-[40%] w-[100%] min-w-[305px] mb-3' style={{animation: `translateXani ${duration}ms linear`}}>
+            <section className='md:w-[40%] w-[100%] min-w-[305px] mediaWidth mb-3' style={{animation: `translateXani ${duration}ms linear`}}>
                 <h2 className='text-primary'>{title}</h2>
                 <p className={`my-4 [word-spacing:0.5rem] font-serif text-secondary`}>{desc}</p>
                 <div className='flex gap-[1rem]'>
@@ -24,7 +24,7 @@ const ProjectInfo = ({ title, desc, img, site = "/", github = "/",duration=100, 
                 </div>
             </section>
             <section className='md:w-[60%] w-[100%]' style={{animation: `translateXani2 ${duration}ms linear`}}>
-                <img src={img} alt={img} className="w-[100%] rounded-md min-w-[310px]" />
+                <img src={img} alt={img} className="w-[100%] rounded-md min-w-[310px] mediaWidth" />
             </section>
         </main>
     )

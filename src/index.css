@@ -8,7 +8,7 @@ body {
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;  
+  font-family: 'Oswald', sans-serif;    
 }
 html {
   scroll-behavior: smooth;
@@ -123,5 +123,19 @@ input{
   }
   100%{
       transform: translateY(0rem);
+  }
+}
+@media screen and (max-width : 330px) {
+  .mediaPadding{
+    padding: 0.3rem;
+  }
+  .mediaWidth{
+    min-width: 100%;
+  }
+  .mediaFont{
+    font-size: 1rem;
+  }
+  .mediaGap{
+    gap: 1rem;
   }
 }

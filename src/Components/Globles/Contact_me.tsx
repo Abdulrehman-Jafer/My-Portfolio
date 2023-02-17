@@ -31,6 +31,10 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
                     setSubmitting(false)
                     setFormData({ user_name: "", user_email: "", message: "" })
                 }
+                else{
+                    setSubmitting(false)
+                    toast.error("Request time out")
+                }
             }).catch(err => {
                 console.log(err)
                 toast.error("Something went wrong")

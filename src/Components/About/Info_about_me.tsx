@@ -23,7 +23,7 @@ const Info_about_me = () => {
                     </p>
                 </div>
             </section>
-            <section className='bg-third rounded-md sm:p-[2rem] p-4 min-w-[300px]'>
+            <section className='bg-third rounded-md sm:p-[2rem] p-4 min-w-[300px] mediaWidth'>
                 <img src={myPic} alt="myPic" className='object-cover w-[100%] h-[500px]' />
             </section>
         </main>
