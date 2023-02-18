@@ -23,7 +23,7 @@ const Navbar = () => {
                  hover:scale-[1.02] hover:text-third`} to={"/about"}>
                     About
                 </Link>
-                <button onClick={() => window.open(Resume)} className=" bg-none text-[1.2rem] mediaFont noBackground noBorder font-semibold decoration-4 text-primary dark:text-darkprimary hover:text-third hover:scale-[1.02 dark:hover:text-darkthird">
+                <button onClick={() => window.open(Resume)} className=" bg-none text-[1.2rem] mediaFont noBackground noBorder font-semibold decoration-4 text-primary dark:text-darkprimary hover:text-third hover:scale-[1.02] dark:hover:text-darkthird">
                     Resume
                  </button>
                 <Theme />
