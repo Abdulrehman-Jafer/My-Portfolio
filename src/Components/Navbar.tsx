@@ -23,10 +23,9 @@ const Navbar = () => {
                  hover:scale-[1.02] hover:text-third`} to={"/about"}>
                     About
                 </Link>
-                <Link className={`${currentPath.pathname === "/resume" ? "text-third dark:text-darkthird underline decoration-4" : "text-primary dark:text-darkprimary scale-[1]"} hover:scale-[1.02] hover:text-slate-400`}
-                    to={""} download={Resume}  >
-                    <button onClick={() => window.open(Resume)}>Resume</button>
-                </Link>
+                <button onClick={() => window.open(Resume)} className=" bg-none text-[1.2rem] mediaFont noBackground noBorder font-semibold decoration-4 text-primary dark:text-darkprimary hover:text-third hover:scale-[1.02">
+                    Resume
+                 </button>
                 <Theme />
             </section>
         </main>
