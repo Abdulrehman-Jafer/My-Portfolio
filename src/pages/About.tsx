@@ -8,7 +8,7 @@ const About = () => {
     <>
       <main className='flex flex-col justify-center gap-[15rem] py-10'>
         <Info_about_me />
-        <div className='bg-primary p-3 flex justify-center'>
+        <div className='bg-primary dark:bg-darkprimary p-3 flex justify-center'>
           <div className='max-w-[800px] w-[100%]'>
             <Home_bottom inputRef={inputRef} />
           </div>

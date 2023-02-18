@@ -31,7 +31,7 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
                     setSubmitting(false)
                     setFormData({ user_name: "", user_email: "", message: "" })
                 }
-                else{
+                else {
                     setSubmitting(false)
                     toast.error("Request time out")
                 }
@@ -46,8 +46,8 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
     return (
         <main>
             <section className='max-w-[800px] w-[100%]' id='scroll'>
-                <h6 className='text-3xl text-secondary'>Want to get in touch?</h6>
-                <h6 className='text-3xl text-secondary mb-[1rem] '>Drop me a line!</h6>
+                <h6 className='text-3xl text-secondary dark:text-darksecondary'>Want to get in touch?</h6>
+                <h6 className='text-3xl text-secondary dark:text-darksecondary mb-[1rem] '>Drop me a line!</h6>
                 <form
                     className='flex flex-col gap-[1rem] text-primary mb-[10rem]'
                     ref={formRef}
@@ -57,7 +57,7 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
                             <p className='mb-[0.5rem]'>Name</p>
                             <input
                                 ref={inputRef}
-                                className='indent-2 py-[0.5rem] rounded-[0.2rem] w-[100%] outline-third font-serif'
+                                className='indent-2 py-[0.5rem] rounded-[0.2rem] w-[100%] outline-third dark:outline-darkthird font-serif'
                                 type="text"
                                 name="user_name"
                                 id="name"
@@ -71,7 +71,7 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
                                 Email
                             </p>
                             <input
-                                className='indent-2 py-[0.5rem] rounded-[0.2rem] w-[100%] outline-third font-serif'
+                                className='indent-2 py-[0.5rem] rounded-[0.2rem] w-[100%] outline-third dark:outline-darkthird font-serif'
                                 type="email"
                                 name='user_email'
                                 id='email'
@@ -87,7 +87,7 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
                             Your Message
                         </div>
                         <textarea
-                            className='w-[100%] indent-2 py-[0.5rem] rounded-[0.2rem] outline-third font-serif'
+                            className='w-[100%] indent-2 py-[0.5rem] rounded-[0.2rem] outline-third dark:outline-darkthird font-serif'
                             name="message"
                             rows={10}
                             id="textArea"
@@ -99,7 +99,7 @@ const Contact_me = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => 
                     </div>
                     <button
                         disabled={submitting}
-                        className='flex-none bg-primary w-[100px] text-main [font-weight:600] py-1 rounded-[0.2rem]  hover:text-third hover:scale-[1.05] noBorder'>
+                        className='flex-none sm:text-[1.2rem] bg-primary dark:bg-darkprimary w-[100px] text-main dark:text-darkmain [font-weight:600] py-1 rounded-[0.2rem]  hover:text-third dark:hover:text-darkthird hover:scale-[1.05] noBorder'>
                         {submitting ? "Please wait" : "Submit"}
                     </button>
                 </form>

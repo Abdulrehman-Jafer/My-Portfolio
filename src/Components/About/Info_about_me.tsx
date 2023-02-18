@@ -5,10 +5,10 @@ const Info_about_me = () => {
         <main className='flex gap-[3rem] flex-wrap items-center justify-center transformY100remfromBottom'>
             <section className='flex flex-col gap-[2rem]'>
                 <div className='flex flex-col gap-[0.3rem]'>
-                    <p className={`opacity-[0.3]`}>Hey there!</p>
-                    <h3 className='text-3xl text-primary'>I'M ABDULREHMAN JAFER</h3>
+                    <p className={`opacity-[0.3] text-secondary dark:text-darksecondary`}>Hey there!</p>
+                    <h3 className='text-3xl text-primary dark:text-darkprimary'>I'M ABDULREHMAN JAFER</h3>
                 </div>
-                <div className='max-w-[800px] flex flex-col gap-[3rem] sm:translateX text-secondary'>
+                <div className='max-w-[800px] flex flex-col gap-[3rem] sm:translateX text-secondary dark:text-darksecondary'>
                     <p className='max-w-[500px] [word-spacing:0.5rem]'>
                         I am a web developer and looking forward to be a part of awesome projects.
                         I would love to work with a team of creative developer and I'm very enthusiastic
@@ -23,7 +23,7 @@ const Info_about_me = () => {
                     </p>
                 </div>
             </section>
-            <section className='bg-third rounded-md sm:p-[2rem] p-4 min-w-[300px] mediaWidth'>
+            <section className='bg-third dark:bg-darkthird rounded-md sm:p-[2rem] p-4 min-w-[300px] mediaWidth'>
                 <img src={myPic} alt="myPic" className='object-cover w-[100%] h-[500px]' />
             </section>
         </main>
