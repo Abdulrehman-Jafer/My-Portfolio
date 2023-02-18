@@ -17,6 +17,7 @@ module.exports = {
       darkprimary : "#537FE7", 
       darksecondary: "#E9F8F9",
       darkthird:"#C0EEF2",
+      white : "white"
     },
   },
   plugins: [],

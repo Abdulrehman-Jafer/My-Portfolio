@@ -1,8 +1,12 @@
 import bg from "../../assets/bg-walpaper.jfif"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { RefObject } from "react"
 
 const Home_top = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => {
+    const navigate = useNavigate()
+    const navigator = async () => {
+        navigate("/portfolio")
+    }
     return (
         <main className="flex items-center gap-[2rem] flex-wrap transformY100rem">
             <section className="flex-1 flex flex-col gap-[3rem] min-w-[310px] mediaWidth" >
@@ -19,11 +23,11 @@ const Home_top = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => {
                     keep myself <span className="text-primary dark:text-darkprimary">up-to-date</span>.
                 </p>
                 <div className="flex gap-[3rem]">
-                    <Link to={"/portfolio"}>
-                        <button className="bg-primary dark:bg-darkprimary px-3 py-2 font-bold text-main dark:text-darkmain rounded-[0.3rem] hover:text-third dark:hover:text-darkthird noBorder md:text-[1.3rem]">
-                            Portfolio
-                        </button>
-                    </Link>
+                    <button
+                        onClick={navigator}
+                        className="bg-primary dark:bg-darkprimary px-3 py-2 font-bold text-main dark:text-darkmain rounded-[0.3rem] hover:text-third dark:hover:text-darkthird noBorder md:text-[1.3rem]">
+                        Portfolio
+                    </button>
                     <a href="#scroll"
                         onClick={() => {
                             setTimeout(() => {
@@ -38,7 +42,7 @@ const Home_top = ({ inputRef }: { inputRef: RefObject<HTMLInputElement> }) => {
             </section>
             <section className="flex-1 relative min-w-[300px] sm:min-w-[400px] mediaWidth">
                 <img src={bg} alt="bg" className="rounded-[1rem] w-[100%] object-cover min-h-[500px] " />
-                <div className="absolute top-[40%] left-[15%] fontStyle" style={{color:"white"}}>
+                <div className="absolute top-[40%] left-[15%] fontStyle" style={{ color: "white" }}>
                     <p className=" text-2xl mi-w-[300px]">"You are what you believe yourself to be" </p>
                     <h4 className=" text-2xl">- Paulo Coehlo</h4>
                 </div>
