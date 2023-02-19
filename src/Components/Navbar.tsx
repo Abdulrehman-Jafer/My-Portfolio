@@ -23,7 +23,7 @@ const Navbar = () => {
                  hover:scale-[1.02] hover:text-third dark:hover:text-darkthird`} to={"/about"}>
                     About
                 </Link>
-                    <button onClick={() => window.open(Resume)} className="px-1 rounded-sm cursor-pointer">Resume</button>
+                    <span onClick={() => window.open(Resume)} className="text-primary dark:text-darkprimary scale-[1] cursor-pointer">Resume</span>
                 <Theme />
             </section>
         </main>
